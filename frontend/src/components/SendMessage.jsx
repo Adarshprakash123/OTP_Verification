@@ -9,7 +9,7 @@ const SendMessage = () => {
 
     const handleSend = async () => {
         try {
-            const response = await axios.post('http://localhost:3001/api/messages/send', {
+            const response = await axios.post('https://otp-verification-2-dc58.onrender.com/api/messages/send', {
                 name: contact.name,
                 phone: contact.phone,
             });
