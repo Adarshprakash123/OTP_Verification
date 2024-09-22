@@ -7,7 +7,7 @@ const MessageList = () => {
     useEffect(() => {
         const fetchMessages = async () => {
             try {
-                const response = await axios.get('http://localhost:3001/api/messages');
+                const response = await axios.get('https://otp-verification-2-dc58.onrender.com/api/messages');
                 setMessages(response.data);
             } catch (error) {
                 console.error('Error fetching messages:', error);
