@@ -4,7 +4,7 @@ const cors = require('cors');
 const messageRoutes = require('./routes/messageRoutes');
 require('dotenv').config();
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://singh:12345678.aA%40@cluster0.l02gr.mongodb.net/otpApp');
+mongoose.connect('mongodb://localhost:27017/otpApp');
 
 const app = express();
 app.use(bodyParser.json());
